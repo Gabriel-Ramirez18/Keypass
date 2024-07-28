@@ -4,14 +4,13 @@ import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore';
 import { db } from '../../FirebaseConfig'; 
 import { useFocusEffect } from '@react-navigation/native';
 
-// Colores de la paleta
 const colors = {
-  primary: '#402E7A', // Fondo principal
-  secondary: '#4C3BCF', // Color secundario
-  tertiary: '#4B70F5', // Color terciario
-  quaternary: '#3DC2EC', // Color de acento
-  deleteButton: '#FF0000', // Color para el botón de eliminar
-  buttonText: '#FFF', // Color del texto del botón
+  primary: '#402E7A', 
+  secondary: '#4C3BCF',
+  tertiary: '#4B70F5', 
+  quaternary: '#3DC2EC',
+  deleteButton: '#FF0000', 
+  buttonText: '#FFF', 
 };
 
 const Home = ({ navigation, setIsAuthenticated }) => {
@@ -110,11 +109,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: colors.primary, // Fondo principal
+    backgroundColor: colors.primary, 
   },
   title: {
     fontSize: 30,
-    color: colors.quaternary, // Color del título
+    color: colors.quaternary, 
     marginBottom: 20,
   },
   list: {
@@ -127,28 +126,28 @@ const styles = StyleSheet.create({
   },
   keyButton: {
     padding: 15,
-    backgroundColor: colors.tertiary, // Color de fondo del botón
+    backgroundColor: colors.tertiary, 
     borderRadius: 10,
     alignItems: 'center',
   },
   keyText: {
     fontSize: 18,
-    color: colors.buttonText, // Color del texto del botón
+    color: colors.buttonText, 
   },
   deleteButton: {
     marginTop: 10,
     padding: 10,
-    backgroundColor: colors.deleteButton, // Color del botón de eliminar
+    backgroundColor: colors.deleteButton, 
     borderRadius: 5,
     alignItems: 'center',
   },
   deleteButtonText: {
-    color: colors.buttonText, // Color del texto del botón de eliminar
+    color: colors.buttonText, 
     fontSize: 16,
   },
   noKeysText: {
     fontSize: 18,
-    color: colors.quaternary, // Color del texto cuando no hay contraseñas
+    color: colors.quaternary, 
     marginBottom: 20,
   },
   addButton: {
@@ -158,13 +157,13 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 30,
-    backgroundColor: colors.secondary, // Color del botón de añadir
+    backgroundColor: colors.secondary, 
     justifyContent: 'center',
     alignItems: 'center',
   },
   addButtonText: {
     fontSize: 30,
-    color: colors.buttonText, // Color del texto del botón de añadir
+    color: colors.buttonText, 
   },
 });
 

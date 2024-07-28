@@ -67,16 +67,16 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 40,
     left: 20,
-    backgroundColor: colors.tertiary, // Fondo del botón de retroceso
+    backgroundColor: colors.tertiary, 
     padding: 10,
     borderRadius: 5,
   },
   text: {
-    color: colors.quaternary, // Color del texto
+    color: colors.quaternary, 
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 50,
-    textShadowColor: colors.secondary, // Sombra del texto para más contraste
+    textShadowColor: colors.secondary, 
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 5,
   },

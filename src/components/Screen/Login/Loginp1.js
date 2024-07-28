@@ -22,8 +22,8 @@ const Loginp1 = ({ navigation, setIsAuthenticated }) => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       Alert.alert('Éxito', 'Inicio de sesión exitoso');
-      setIsAuthenticated(true); // Actualiza el estado de autenticación
-      navigation.replace('AppTabs'); // Navega al Tab.Navigator
+      setIsAuthenticated(true); 
+      navigation.replace('AppTabs'); 
     } catch (error) {
       console.error("Error logging in: ", error);
       Alert.alert('Error', 'No se pudo iniciar sesión. Verifica tus credenciales.');

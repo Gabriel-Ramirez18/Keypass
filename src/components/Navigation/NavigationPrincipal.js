@@ -68,7 +68,7 @@ const NavigationPrincipal = () => {
     <NavigationContainer>
       <Stack.Navigator>
         {isAuthenticated ? (
-          // Navega directamente a las pestañas cuando está autenticado
+          
           <Stack.Screen name="AppTabs" component={AppTabs} options={{ headerShown: false }} />
         ) : (
           <>

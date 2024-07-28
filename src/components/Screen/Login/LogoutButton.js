@@ -9,7 +9,7 @@ const LogoutButton = ({ navigation }) => {
     try {
       await signOut(auth);
       Alert.alert('Éxito', 'Has cerrado sesión');
-      navigation.replace('Loginp1'); // Redirige a la pantalla de inicio de sesión
+      navigation.replace('Loginp1'); 
     } catch (error) {
       console.error('Error al cerrar sesión:', error);
       Alert.alert('Error', 'No se pudo cerrar sesión');
@@ -26,7 +26,7 @@ const LogoutButton = ({ navigation }) => {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: '#402E7A',
-    borderRadius: 50, // Circular para el icono
+    borderRadius: 50, 
     padding: 10,
     alignItems: 'center',
     justifyContent: 'center',
